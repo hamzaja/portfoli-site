@@ -1,12 +1,17 @@
 import React from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    Hamza javed
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return (
+      <div className="App">
+        <p>Blogs</p>
+          Hamza Javed
+      </div>
+    )
+  }
+
 }
 
-export default App;
+export default withRouter(App);
