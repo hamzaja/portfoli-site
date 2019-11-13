@@ -1,14 +1,18 @@
 import React from 'react';
+import Blogs from './blogs'
+import Projects from './projects'
+import HomePage from './homePage'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import './App.css';
 
 class App extends React.Component{
   render(){
     return (
-      <div className="App">
-        <p>Blogs</p>
-          Hamza Javed
-      </div>
+      <switch>
+        <Route exact path={'/'} component={HomePage}/>
+        <Route path={'/blogs'} component={Blogs}/>
+        <Route path={'/projects'} component={Projects}/>
+      </switch>
     )
   }
 
