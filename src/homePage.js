@@ -1,11 +1,21 @@
 import React from 'react'
 
 class HomePage extends React.Component{
+  projects = () => {
+    
+  }
+  blogs = () => {
+
+  }
 
   render(){
     return(
       <div>
-        HomePage
+      <h4 onClick={this.projects}>projects</h4>
+      <h4 onClick={this.blogs}>blogs</h4>
+        <center><h2>Hamza Javed</h2><br/><br/><br/><br/>
+          <p>I'm Hamza. I am full stack developer.</p>
+          </center>
       </div>
     )
   }
