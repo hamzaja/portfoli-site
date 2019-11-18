@@ -2,10 +2,10 @@ import React from 'react'
 
 class HomePage extends React.Component{
   projects = () => {
-    
+    this.props.history.push('/projects')
   }
   blogs = () => {
-
+    this.props.history.push('/blogs')
   }
 
   render(){
