@@ -2,7 +2,7 @@ import React from 'react';
 import Blogs from './blogs'
 import Projects from './projects'
 import HomePage from './homePage'
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { Route, withRouter } from 'react-router-dom'
 import './App.css';
 
 class App extends React.Component{
